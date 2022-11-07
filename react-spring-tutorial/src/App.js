@@ -1,12 +1,16 @@
 import React from "react"
-import Translate from "./Translate"
-import BarGraph from "./BarGraph"
+import ProgressBar from "./ProgressBar"
+import Text from "./Text"
 
 function App() {
   return (
     <div>
-      {/* <Translate /> */}
-      <BarGraph />
+      <hr />
+      <br />   
+      <ProgressBar />
+      <br />
+      <hr />
+      <Text />
     </div>
   )
 }

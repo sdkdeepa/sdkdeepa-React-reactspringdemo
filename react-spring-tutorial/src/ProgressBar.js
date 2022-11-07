@@ -43,7 +43,7 @@ const bars = [
   },
 ]
 
-const BarGraph = () => {
+const ProgressBar = () => {
   const springs = useSprings(
     bars.length,
     bars.map(({ color, key, ...config }) => config)
@@ -53,12 +53,13 @@ const BarGraph = () => {
     <animated.div
       style={{
         ...spring,
-        height: "20px",
-        marginBottom: "10px",
+        height: "50px",
+        marginLeft: "150px",
+        marginBottom: "20px",
         backgroundColor: bars[index].color,
       }}
     />
   ))
 }
 
-export default BarGraph
+export default ProgressBar
